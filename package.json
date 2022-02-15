@@ -1,0 +1,26 @@
+{
+    "name": "learn_next",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "mock": "json-server -w db.json -p 4200 -d 500",
+        "serve": "concurrently \"npm run dev\" \"npm run mock\"",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "next": "12.0.10",
+        "nextjs-progressbar": "^0.0.13",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.17",
+        "@types/react": "^17.0.39",
+        "concurrently": "^7.0.0",
+        "eslint": "8.9.0",
+        "eslint-config-next": "12.0.10"
+    }
+}
